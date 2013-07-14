@@ -7,7 +7,7 @@ var buffer = fs.readFileSync('./index.html');
 
 app.get('/', function(request, response) {
  // response.send('Hello World2!');
-  response.sent(buffer.toString());
+  response.send(buffer.toString());
 
 });
 
